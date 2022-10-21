@@ -3,6 +3,7 @@
 From commandline,
 
 >javac PrimeNumbers.java
+
 >java PrimeNumbers
 
 
