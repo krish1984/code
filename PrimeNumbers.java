@@ -1,3 +1,7 @@
+package code;
+
+import java.util.Scanner;
+
 public class PrimeNumbers {
 	
 	public static boolean isPrime(int number) {
@@ -13,12 +17,14 @@ public class PrimeNumbers {
 	}
 	
 	public static void main(String[] args) {
-		int input = 6;
+		Scanner scanner = new Scanner(System.in);
+		int input = scanner.nextInt(); // we should add validation here and throw error if user enters a string instead of number
 		for (int i = 1; i < input; i++) {
 			if(isPrime(i)) {
 				System.out.println(i);
 			}
 		}
+		scanner.close();
 	}
 
 }
